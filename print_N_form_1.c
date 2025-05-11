@@ -1,20 +1,18 @@
 #include <stdio.h>
 
-void numbers(int n)
+void numbers(int i)
 {
-    if (n == 0)
+    if (i == 6)
     {
         return;
     }
-
-    printf("%d\n", n);
-    numbers(n - 1);
+    numbers(i + 1);
+    printf("%d\n", i);
 }
 
 int main()
 {
-    int n;
-    scanf("%d", &n);
-    numbers(n);
+
+    numbers(1);
     return 0;
 }
